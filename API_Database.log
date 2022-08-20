@@ -1,0 +1,432 @@
+INFO 2022-08-21 00:39:00,624 Logging is enabled
+INFO 2022-08-21 00:39:02,278 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO 2022-08-21 00:39:02,278 [33mPress CTRL+C to quit[0m
+INFO 2022-08-21 00:39:47,510 Sql_database class invoked
+INFO 2022-08-21 00:39:47,511 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:39:47,511 Database creation function from class invoked
+INFO 2022-08-21 00:39:47,634 Database created successfully  [('babu12',), ('babu1234',), ('dataset',), ('dataset1',), ('information_schema',), ('mysql',), ('performance_schema',), ('sakila',), ('sys',), ('world',)]
+INFO 2022-08-21 00:39:47,637 Table creation function from class invoked
+INFO 2022-08-21 00:39:48,126 Tables created successfully[('attribute',)]
+INFO 2022-08-21 00:39:48,127 Attribute bulk insert function from class invoked
+INFO 2022-08-21 00:39:50,354 All attribute data inserted
+INFO 2022-08-21 00:39:50,355 insert data function from class invoked
+INFO 2022-08-21 00:39:50,431 one record inserted
+INFO 2022-08-21 00:39:50,438 127.0.0.1 - - [21/Aug/2022 00:39:50] "POST /mysql_database/insert HTTP/1.1" 200 -
+INFO 2022-08-21 00:40:11,687 Sql_database class invoked
+INFO 2022-08-21 00:40:11,687 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:40:11,687 json convertion function from class invoked
+INFO 2022-08-21 00:40:11,981 Datasets are converted to json format
+INFO 2022-08-21 00:40:11,982 Bulk insert function from class invoked
+INFO 2022-08-21 00:40:11,995 Json data loaded successfully
+INFO 2022-08-21 00:40:13,691 Attribute data inserted into MongoDB
+INFO 2022-08-21 00:40:13,723 insert record function from class invoked
+INFO 2022-08-21 00:40:15,648 record inserted into MongoDB is 
+                          _id    Dress_ID  ... PatternType Recommendation
+0    6301309db029c3601b364d28  1006032852  ...      animal              1
+1    6301309db029c3601b364d28  1212192089  ...      animal              0
+2    6301309db029c3601b364d28  1190380701  ...       print              0
+3    6301309db029c3601b364d28   966005983  ...       print              1
+4    6301309db029c3601b364d28   876339541  ...         dot              0
+..                        ...         ...  ...         ...            ...
+496  6301309db029c3601b364d28   722565148  ...        NULL              0
+497  6301309db029c3601b364d28   532874347  ...       solid              1
+498  6301309db029c3601b364d28   655464934  ...       print              1
+499  6301309db029c3601b364d28   919930954  ...       solid              0
+500  6301309db029c3601b364d28    10222851  ...      animal              1
+
+[501 rows x 15 columns]
+INFO 2022-08-21 00:40:15,685 127.0.0.1 - - [21/Aug/2022 00:40:15] "POST /MongoDB_database/insert HTTP/1.1" 200 -
+INFO 2022-08-21 00:41:16,142 Sql_database class invoked
+INFO 2022-08-21 00:41:16,142 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:41:16,142 json convertion function from class invoked
+INFO 2022-08-21 00:41:16,157 Datasets are converted to json format
+INFO 2022-08-21 00:41:16,157 Bulk insert function from class invoked
+INFO 2022-08-21 00:41:16,170 Json data loaded successfully
+INFO 2022-08-21 00:41:16,901 Attribute data inserted into MongoDB
+INFO 2022-08-21 00:41:16,934 insert record function from class invoked
+INFO 2022-08-21 00:41:18,742 record inserted into MongoDB is 
+                          _id    Dress_ID  ... PatternType Recommendation
+0    630131d46dff57b7e52e743a  1006032852  ...      animal              1
+1    630131d46dff57b7e52e743a  1212192089  ...      animal              0
+2    630131d46dff57b7e52e743a  1190380701  ...       print              0
+3    630131d46dff57b7e52e743a   966005983  ...       print              1
+4    630131d46dff57b7e52e743a   876339541  ...         dot              0
+..                        ...         ...  ...         ...            ...
+496  630131d46dff57b7e52e743a   722565148  ...        NULL              0
+497  630131d46dff57b7e52e743a   532874347  ...       solid              1
+498  630131d46dff57b7e52e743a   655464934  ...       print              1
+499  630131d46dff57b7e52e743a   919930954  ...       solid              0
+500  630131d46dff57b7e52e743a    10222851  ...      animal              1
+
+[501 rows x 15 columns]
+INFO 2022-08-21 00:41:18,779 127.0.0.1 - - [21/Aug/2022 00:41:18] "POST /MongoDB_database/insert HTTP/1.1" 200 -
+INFO 2022-08-21 00:41:22,494 Sql_database class invoked
+INFO 2022-08-21 00:41:22,494 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:41:22,494 insert record function from class invoked
+INFO 2022-08-21 00:41:24,165 record updated into MongoDB
+INFO 2022-08-21 00:41:24,196 127.0.0.1 - - [21/Aug/2022 00:41:24] "POST /MongoDB_database/update HTTP/1.1" 200 -
+INFO 2022-08-21 00:41:53,721 Sql_database class invoked
+INFO 2022-08-21 00:41:53,722 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:41:53,722 insert record function from class invoked
+INFO 2022-08-21 00:41:55,135 record fetched into MongoDB is 
+{'_id': ObjectId('630131d56dff57b7e52e743c'), 'id': '0001', 'type': 'spring_roll', 'name': 'Cake', 'ppu': 0.55, 'batters': {'batter': [{'id': '1001', 'type': 'Regular'}, {'id': '1002', 'type': 'Chocolate'}, {'id': '1003', 'type': 'Blueberry'}, {'id': '1004', 'type': "Devil's Food"}]}, 'topping': [{'id': '5001', 'type': 'None'}, {'id': '5002', 'type': 'Glazed'}, {'id': '5005', 'type': 'Sugar'}, {'id': '5007', 'type': 'Powdered Sugar'}, {'id': '5006', 'type': 'Chocolate with Sprinkles'}, {'id': '5003', 'type': 'Chocolate'}, {'id': '5004', 'type': 'Maple'}]}
+INFO 2022-08-21 00:41:55,135 record fetched into MongoDB is 
+{'_id': ObjectId('630131d56dff57b7e52e743d'), 'id': '0002', 'type': 'spring_roll', 'name': 'Raised', 'ppu': 0.55, 'batters': {'batter': [{'id': '1001', 'type': 'Regular'}]}, 'topping': [{'id': '5001', 'type': 'None'}, {'id': '5002', 'type': 'Glazed'}, {'id': '5005', 'type': 'Sugar'}, {'id': '5003', 'type': 'Chocolate'}, {'id': '5004', 'type': 'Maple'}]}
+INFO 2022-08-21 00:41:55,136 record fetched into MongoDB is 
+{'_id': ObjectId('630131d56dff57b7e52e743e'), 'id': '0003', 'type': 'spring_roll', 'name': 'Old Fashioned', 'ppu': 0.55, 'batters': {'batter': [{'id': '1001', 'type': 'Regular'}, {'id': '1002', 'type': 'Chocolate'}]}, 'topping': [{'id': '5001', 'type': 'None'}, {'id': '5002', 'type': 'Glazed'}, {'id': '5003', 'type': 'Chocolate'}, {'id': '5004', 'type': 'Maple'}]}
+INFO 2022-08-21 00:41:55,170 127.0.0.1 - - [21/Aug/2022 00:41:55] "POST /MongoDB_database/fetch HTTP/1.1" 200 -
+INFO 2022-08-21 00:42:02,211 Sql_database class invoked
+INFO 2022-08-21 00:42:02,212 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:42:02,212 insert record function from class invoked
+INFO 2022-08-21 00:42:02,626 record deleted into MongoDB
+INFO 2022-08-21 00:42:02,660 127.0.0.1 - - [21/Aug/2022 00:42:02] "POST /MongoDB_database/delete HTTP/1.1" 200 -
+INFO 2022-08-21 00:42:09,075 Sql_database class invoked
+INFO 2022-08-21 00:42:09,075 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:42:09,075 insert record function from class invoked
+INFO 2022-08-21 00:42:09,486 record fetched into MongoDB is 
+{'_id': ObjectId('630131d56dff57b7e52e743d'), 'id': '0002', 'type': 'spring_roll', 'name': 'Raised', 'ppu': 0.55, 'batters': {'batter': [{'id': '1001', 'type': 'Regular'}]}, 'topping': [{'id': '5001', 'type': 'None'}, {'id': '5002', 'type': 'Glazed'}, {'id': '5005', 'type': 'Sugar'}, {'id': '5003', 'type': 'Chocolate'}, {'id': '5004', 'type': 'Maple'}]}
+INFO 2022-08-21 00:42:09,487 record fetched into MongoDB is 
+{'_id': ObjectId('630131d56dff57b7e52e743e'), 'id': '0003', 'type': 'spring_roll', 'name': 'Old Fashioned', 'ppu': 0.55, 'batters': {'batter': [{'id': '1001', 'type': 'Regular'}, {'id': '1002', 'type': 'Chocolate'}]}, 'topping': [{'id': '5001', 'type': 'None'}, {'id': '5002', 'type': 'Glazed'}, {'id': '5003', 'type': 'Chocolate'}, {'id': '5004', 'type': 'Maple'}]}
+INFO 2022-08-21 00:42:09,522 127.0.0.1 - - [21/Aug/2022 00:42:09] "POST /MongoDB_database/fetch HTTP/1.1" 200 -
+INFO 2022-08-21 00:42:39,757 Sql_database class invoked
+INFO 2022-08-21 00:42:39,757 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:42:39,757 updating records function from class invoked
+INFO 2022-08-21 00:42:39,855 Records updated
+INFO 2022-08-21 00:42:39,855 127.0.0.1 - - [21/Aug/2022 00:42:39] "POST /mysql_database/update HTTP/1.1" 200 -
+INFO 2022-08-21 00:42:45,281 Sql_database class invoked
+INFO 2022-08-21 00:42:45,281 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:42:45,282 fetch data function from class invoked
+INFO 2022-08-21 00:42:45,349 Records fetched             0         1        2    3   ...        10       11      12 13
+0    1006032852      Sexy      Low  4.6  ...   chiffon  ruffles  animal  1
+1    1212192089    Casual      Low  0.0  ...      NULL  ruffles  animal  1
+2     876339541      cute      Low  4.5  ...   chiffon      bow     dot  1
+3    1068332458  bohemian      Low  0.0  ...      NULL     NULL   print  1
+4    1220707172    Casual  Average  0.0  ...      NULL     NULL   solid  1
+..          ...       ...      ...  ...  ...       ...      ...     ... ..
+156   817353671  bohemian      Low  4.6  ...   chiffon     none   solid  1
+157   722565148      Sexy      Low  4.3  ...      NULL     NULL    NULL  1
+158   532874347    Casual  Average  4.7  ...      NULL     lace   solid  1
+159   919930954    Casual      Low  4.4  ...  Corduroy     lace   solid  1
+160    10222851      Sexy      Low  4.6  ...   chiffon  ruffles  animal  1
+
+[161 rows x 14 columns]
+INFO 2022-08-21 00:42:45,350 127.0.0.1 - - [21/Aug/2022 00:42:45] "POST /mysql_database/fetch HTTP/1.1" 200 -
+INFO 2022-08-21 00:42:49,390 Sql_database class invoked
+INFO 2022-08-21 00:42:49,390 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:42:49,390 delete data function from class invoked
+INFO 2022-08-21 00:42:49,401 Records deleted
+INFO 2022-08-21 00:42:49,401 127.0.0.1 - - [21/Aug/2022 00:42:49] "POST /mysql_database/delete HTTP/1.1" 200 -
+INFO 2022-08-21 00:44:23,432 Sql_database class invoked
+INFO 2022-08-21 00:44:23,432 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:44:23,432 Database creation function from class invoked
+INFO 2022-08-21 00:44:23,597 Database created successfully  [('babu12',), ('babu1234',), ('dataset',), ('dataset1',), ('information_schema',), ('mysql',), ('performance_schema',), ('sakila',), ('sys',), ('world',)]
+INFO 2022-08-21 00:44:23,597 Table creation function from class invoked
+INFO 2022-08-21 00:44:24,030 Tables created successfully[('attribute',)]
+INFO 2022-08-21 00:44:24,031 Attribute bulk insert function from class invoked
+INFO 2022-08-21 00:44:25,482 All attribute data inserted
+INFO 2022-08-21 00:44:25,483 insert data function from class invoked
+INFO 2022-08-21 00:44:25,537 one record inserted
+INFO 2022-08-21 00:44:25,539 127.0.0.1 - - [21/Aug/2022 00:44:25] "POST /mysql_database/insert HTTP/1.1" 200 -
+INFO 2022-08-21 00:45:35,273 Sql_database class invoked
+INFO 2022-08-21 00:45:35,273 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:45:35,274 updating records function from class invoked
+INFO 2022-08-21 00:45:35,331 Records updated
+INFO 2022-08-21 00:45:35,332 127.0.0.1 - - [21/Aug/2022 00:45:35] "POST /mysql_database/update HTTP/1.1" 200 -
+INFO 2022-08-21 00:45:43,910 Sql_database class invoked
+INFO 2022-08-21 00:45:43,910 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:45:43,910 fetch data function from class invoked
+INFO 2022-08-21 00:45:43,969 Records fetched             0         1        2    3   ...        10       11      12 13
+0    1006032852      Sexy      Low  4.6  ...   chiffon  ruffles  animal  1
+1    1212192089    Casual      Low  0.0  ...      NULL  ruffles  animal  1
+2     876339541      cute      Low  4.5  ...   chiffon      bow     dot  1
+3    1068332458  bohemian      Low  0.0  ...      NULL     NULL   print  1
+4    1220707172    Casual  Average  0.0  ...      NULL     NULL   solid  1
+..          ...       ...      ...  ...  ...       ...      ...     ... ..
+156   817353671  bohemian      Low  4.6  ...   chiffon     none   solid  1
+157   722565148      Sexy      Low  4.3  ...      NULL     NULL    NULL  1
+158   532874347    Casual  Average  4.7  ...      NULL     lace   solid  1
+159   919930954    Casual      Low  4.4  ...  Corduroy     lace   solid  1
+160    10222851      Sexy      Low  4.6  ...   chiffon  ruffles  animal  1
+
+[161 rows x 14 columns]
+INFO 2022-08-21 00:45:43,969 127.0.0.1 - - [21/Aug/2022 00:45:43] "POST /mysql_database/fetch HTTP/1.1" 200 -
+INFO 2022-08-21 00:45:48,507 Sql_database class invoked
+INFO 2022-08-21 00:45:48,507 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:45:48,507 delete data function from class invoked
+INFO 2022-08-21 00:45:48,524 Records deleted
+INFO 2022-08-21 00:45:48,525 127.0.0.1 - - [21/Aug/2022 00:45:48] "POST /mysql_database/delete HTTP/1.1" 200 -
+INFO 2022-08-21 00:47:18,263 
+
+
+Logging is enabled
+INFO 2022-08-21 00:47:20,219 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO 2022-08-21 00:47:20,219 [33mPress CTRL+C to quit[0m
+INFO 2022-08-21 00:47:55,180 Sql_database class invoked
+INFO 2022-08-21 00:47:55,180 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:47:55,180 Database creation function from class invoked
+INFO 2022-08-21 00:47:55,315 Database created successfully  [('babu12',), ('babu1234',), ('dataset',), ('dataset1',), ('information_schema',), ('mysql',), ('performance_schema',), ('sakila',), ('sys',), ('world',)]
+INFO 2022-08-21 00:47:55,316 Table creation function from class invoked
+INFO 2022-08-21 00:47:55,696 Tables created successfully[('attribute',)]
+INFO 2022-08-21 00:47:55,696 Attribute bulk insert function from class invoked
+INFO 2022-08-21 00:47:57,765 All attribute data inserted
+INFO 2022-08-21 00:47:57,766 insert data function from class invoked
+INFO 2022-08-21 00:47:57,837 one record inserted
+INFO 2022-08-21 00:47:57,840 127.0.0.1 - - [21/Aug/2022 00:47:57] "POST /mysql_database/insert HTTP/1.1" 200 -
+INFO 2022-08-21 00:48:19,262 Sql_database class invoked
+INFO 2022-08-21 00:48:19,262 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:48:19,262 updating records function from class invoked
+INFO 2022-08-21 00:48:19,322 Records updated
+INFO 2022-08-21 00:48:19,324 127.0.0.1 - - [21/Aug/2022 00:48:19] "POST /mysql_database/update HTTP/1.1" 200 -
+INFO 2022-08-21 00:48:56,221 Sql_database class invoked
+INFO 2022-08-21 00:48:56,221 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:48:56,221 fetch data function from class invoked
+INFO 2022-08-21 00:48:56,345 Records fetched             0         1        2    3   ...        10       11      12 13
+0    1006032852      Sexy      Low  4.6  ...   chiffon  ruffles  animal  1
+1    1212192089    Casual      Low  0.0  ...      NULL  ruffles  animal  1
+2     876339541      cute      Low  4.5  ...   chiffon      bow     dot  1
+3    1068332458  bohemian      Low  0.0  ...      NULL     NULL   print  1
+4    1220707172    Casual  Average  0.0  ...      NULL     NULL   solid  1
+..          ...       ...      ...  ...  ...       ...      ...     ... ..
+156   817353671  bohemian      Low  4.6  ...   chiffon     none   solid  1
+157   722565148      Sexy      Low  4.3  ...      NULL     NULL    NULL  1
+158   532874347    Casual  Average  4.7  ...      NULL     lace   solid  1
+159   919930954    Casual      Low  4.4  ...  Corduroy     lace   solid  1
+160    10222851      Sexy      Low  4.6  ...   chiffon  ruffles  animal  1
+
+[161 rows x 14 columns]
+INFO 2022-08-21 00:48:56,346 127.0.0.1 - - [21/Aug/2022 00:48:56] "POST /mysql_database/fetch HTTP/1.1" 200 -
+INFO 2022-08-21 00:49:28,330 Sql_database class invoked
+INFO 2022-08-21 00:49:28,330 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:49:28,330 delete data function from class invoked
+INFO 2022-08-21 00:49:28,339 Records deleted
+INFO 2022-08-21 00:49:28,340 127.0.0.1 - - [21/Aug/2022 00:49:28] "POST /mysql_database/delete HTTP/1.1" 200 -
+INFO 2022-08-21 00:51:03,638 Sql_database class invoked
+INFO 2022-08-21 00:51:03,638 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:51:03,638 fetch data function from class invoked
+INFO 2022-08-21 00:51:03,647 Records fetchedEmpty DataFrame
+Columns: []
+Index: []
+INFO 2022-08-21 00:51:03,648 127.0.0.1 - - [21/Aug/2022 00:51:03] "POST /mysql_database/fetch HTTP/1.1" 200 -
+INFO 2022-08-21 00:51:26,300 Sql_database class invoked
+INFO 2022-08-21 00:51:26,300 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:51:26,300 json convertion function from class invoked
+INFO 2022-08-21 00:51:26,594 Datasets are converted to json format
+INFO 2022-08-21 00:51:26,594 Bulk insert function from class invoked
+INFO 2022-08-21 00:51:26,602 Json data loaded successfully
+INFO 2022-08-21 00:51:27,329 Attribute data inserted into MongoDB
+INFO 2022-08-21 00:51:27,362 insert record function from class invoked
+INFO 2022-08-21 00:51:28,123 record inserted into MongoDB is 
+                          _id    Dress_ID  ... PatternType Recommendation
+0    63013436b1eeb741f9158514  1190380701  ...       print              0
+1    63013436b1eeb741f9158514   966005983  ...       print              1
+2    63013436b1eeb741f9158514  1219677488  ...        NULL              0
+3    63013436b1eeb741f9158514  1113094204  ...       solid              1
+4    63013436b1eeb741f9158514   898481530  ...      animal              0
+..                        ...         ...  ...         ...            ...
+335  63013436b1eeb741f9158514   641665398  ...       solid              0
+336  63013436b1eeb741f9158514   859922576  ...        NULL              0
+337  63013436b1eeb741f9158514   990559192  ...     striped              0
+338  63013436b1eeb741f9158514   713391965  ...       solid              1
+339  63013436b1eeb741f9158514   655464934  ...       print              1
+
+[340 rows x 15 columns]
+INFO 2022-08-21 00:51:28,158 127.0.0.1 - - [21/Aug/2022 00:51:28] "POST /MongoDB_database/insert HTTP/1.1" 200 -
+INFO 2022-08-21 00:51:32,406 Sql_database class invoked
+INFO 2022-08-21 00:51:32,406 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:51:32,406 insert record function from class invoked
+INFO 2022-08-21 00:51:32,881 record updated into MongoDB
+INFO 2022-08-21 00:51:32,911 127.0.0.1 - - [21/Aug/2022 00:51:32] "POST /MongoDB_database/update HTTP/1.1" 200 -
+INFO 2022-08-21 00:51:37,852 Sql_database class invoked
+INFO 2022-08-21 00:51:37,852 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:51:37,852 insert record function from class invoked
+INFO 2022-08-21 00:51:38,383 record fetched into MongoDB is 
+{'_id': ObjectId('63013437b1eeb741f9158516'), 'id': '0001', 'type': 'spring_roll', 'name': 'Cake', 'ppu': 0.55, 'batters': {'batter': [{'id': '1001', 'type': 'Regular'}, {'id': '1002', 'type': 'Chocolate'}, {'id': '1003', 'type': 'Blueberry'}, {'id': '1004', 'type': "Devil's Food"}]}, 'topping': [{'id': '5001', 'type': 'None'}, {'id': '5002', 'type': 'Glazed'}, {'id': '5005', 'type': 'Sugar'}, {'id': '5007', 'type': 'Powdered Sugar'}, {'id': '5006', 'type': 'Chocolate with Sprinkles'}, {'id': '5003', 'type': 'Chocolate'}, {'id': '5004', 'type': 'Maple'}]}
+INFO 2022-08-21 00:51:38,384 record fetched into MongoDB is 
+{'_id': ObjectId('63013437b1eeb741f9158517'), 'id': '0002', 'type': 'spring_roll', 'name': 'Raised', 'ppu': 0.55, 'batters': {'batter': [{'id': '1001', 'type': 'Regular'}]}, 'topping': [{'id': '5001', 'type': 'None'}, {'id': '5002', 'type': 'Glazed'}, {'id': '5005', 'type': 'Sugar'}, {'id': '5003', 'type': 'Chocolate'}, {'id': '5004', 'type': 'Maple'}]}
+INFO 2022-08-21 00:51:38,384 record fetched into MongoDB is 
+{'_id': ObjectId('63013437b1eeb741f9158518'), 'id': '0003', 'type': 'spring_roll', 'name': 'Old Fashioned', 'ppu': 0.55, 'batters': {'batter': [{'id': '1001', 'type': 'Regular'}, {'id': '1002', 'type': 'Chocolate'}]}, 'topping': [{'id': '5001', 'type': 'None'}, {'id': '5002', 'type': 'Glazed'}, {'id': '5003', 'type': 'Chocolate'}, {'id': '5004', 'type': 'Maple'}]}
+INFO 2022-08-21 00:51:38,420 127.0.0.1 - - [21/Aug/2022 00:51:38] "POST /MongoDB_database/fetch HTTP/1.1" 200 -
+INFO 2022-08-21 00:51:41,887 Sql_database class invoked
+INFO 2022-08-21 00:51:41,887 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:51:41,887 insert record function from class invoked
+INFO 2022-08-21 00:51:42,366 record deleted into MongoDB
+INFO 2022-08-21 00:51:42,413 127.0.0.1 - - [21/Aug/2022 00:51:42] "POST /MongoDB_database/delete HTTP/1.1" 200 -
+INFO 2022-08-21 00:51:46,152 Sql_database class invoked
+INFO 2022-08-21 00:51:46,152 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:51:46,152 insert record function from class invoked
+INFO 2022-08-21 00:51:46,672 record fetched into MongoDB is 
+{'_id': ObjectId('63013437b1eeb741f9158517'), 'id': '0002', 'type': 'spring_roll', 'name': 'Raised', 'ppu': 0.55, 'batters': {'batter': [{'id': '1001', 'type': 'Regular'}]}, 'topping': [{'id': '5001', 'type': 'None'}, {'id': '5002', 'type': 'Glazed'}, {'id': '5005', 'type': 'Sugar'}, {'id': '5003', 'type': 'Chocolate'}, {'id': '5004', 'type': 'Maple'}]}
+INFO 2022-08-21 00:51:46,674 record fetched into MongoDB is 
+{'_id': ObjectId('63013437b1eeb741f9158518'), 'id': '0003', 'type': 'spring_roll', 'name': 'Old Fashioned', 'ppu': 0.55, 'batters': {'batter': [{'id': '1001', 'type': 'Regular'}, {'id': '1002', 'type': 'Chocolate'}]}, 'topping': [{'id': '5001', 'type': 'None'}, {'id': '5002', 'type': 'Glazed'}, {'id': '5003', 'type': 'Chocolate'}, {'id': '5004', 'type': 'Maple'}]}
+INFO 2022-08-21 00:51:46,707 127.0.0.1 - - [21/Aug/2022 00:51:46] "POST /MongoDB_database/fetch HTTP/1.1" 200 -
+INFO 2022-08-21 00:53:07,933 
+
+
+Logging is enabled
+INFO 2022-08-21 00:53:09,520 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO 2022-08-21 00:53:09,520 [33mPress CTRL+C to quit[0m
+INFO 2022-08-21 00:53:29,206 Sql_database class invoked
+INFO 2022-08-21 00:53:29,206 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:53:29,206 Database creation function from class invoked
+INFO 2022-08-21 00:53:29,309 Database created successfully  [('babu12',), ('babu1234',), ('dataset',), ('dataset1',), ('information_schema',), ('mysql',), ('performance_schema',), ('sakila',), ('sys',), ('world',)]
+INFO 2022-08-21 00:53:29,310 Table creation function from class invoked
+INFO 2022-08-21 00:53:29,791 Tables created successfully[('attribute',)]
+INFO 2022-08-21 00:53:29,792 Attribute bulk insert function from class invoked
+INFO 2022-08-21 00:53:31,498 All attribute data inserted
+INFO 2022-08-21 00:53:31,500 insert data function from class invoked
+INFO 2022-08-21 00:53:31,575 one record inserted
+INFO 2022-08-21 00:53:31,578 127.0.0.1 - - [21/Aug/2022 00:53:31] "POST /mysql_database/insert HTTP/1.1" 200 -
+INFO 2022-08-21 00:53:42,928 Sql_database class invoked
+INFO 2022-08-21 00:53:42,928 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:53:42,928 updating records function from class invoked
+INFO 2022-08-21 00:53:43,020 Records updated
+INFO 2022-08-21 00:53:43,021 127.0.0.1 - - [21/Aug/2022 00:53:43] "POST /mysql_database/update HTTP/1.1" 200 -
+INFO 2022-08-21 00:53:48,312 Sql_database class invoked
+INFO 2022-08-21 00:53:48,312 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:53:48,312 fetch data function from class invoked
+INFO 2022-08-21 00:53:48,373 Records fetched             0         1        2    3   ...        10       11      12 13
+0    1006032852      Sexy      Low  4.6  ...   chiffon  ruffles  animal  1
+1    1212192089    Casual      Low  0.0  ...      NULL  ruffles  animal  1
+2     876339541      cute      Low  4.5  ...   chiffon      bow     dot  1
+3    1068332458  bohemian      Low  0.0  ...      NULL     NULL   print  1
+4    1220707172    Casual  Average  0.0  ...      NULL     NULL   solid  1
+..          ...       ...      ...  ...  ...       ...      ...     ... ..
+156   817353671  bohemian      Low  4.6  ...   chiffon     none   solid  1
+157   722565148      Sexy      Low  4.3  ...      NULL     NULL    NULL  1
+158   532874347    Casual  Average  4.7  ...      NULL     lace   solid  1
+159   919930954    Casual      Low  4.4  ...  Corduroy     lace   solid  1
+160    10222851      Sexy      Low  4.6  ...   chiffon  ruffles  animal  1
+
+[161 rows x 14 columns]
+INFO 2022-08-21 00:53:48,373 127.0.0.1 - - [21/Aug/2022 00:53:48] "POST /mysql_database/fetch HTTP/1.1" 200 -
+INFO 2022-08-21 00:53:59,654 Sql_database class invoked
+INFO 2022-08-21 00:53:59,654 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:53:59,654 delete data function from class invoked
+INFO 2022-08-21 00:53:59,668 Records deleted
+INFO 2022-08-21 00:53:59,668 127.0.0.1 - - [21/Aug/2022 00:53:59] "POST /mysql_database/delete HTTP/1.1" 200 -
+INFO 2022-08-21 00:54:04,047 Sql_database class invoked
+INFO 2022-08-21 00:54:04,047 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:54:04,048 fetch data function from class invoked
+INFO 2022-08-21 00:54:04,115 Records fetched             0         1        2    3   ...        10       11      12 13
+0    1006032852      Sexy      Low  4.6  ...   chiffon  ruffles  animal  1
+1    1212192089    Casual      Low  0.0  ...      NULL  ruffles  animal  1
+2     876339541      cute      Low  4.5  ...   chiffon      bow     dot  1
+3    1068332458  bohemian      Low  0.0  ...      NULL     NULL   print  1
+4    1220707172    Casual  Average  0.0  ...      NULL     NULL   solid  1
+..          ...       ...      ...  ...  ...       ...      ...     ... ..
+156   817353671  bohemian      Low  4.6  ...   chiffon     none   solid  1
+157   722565148      Sexy      Low  4.3  ...      NULL     NULL    NULL  1
+158   532874347    Casual  Average  4.7  ...      NULL     lace   solid  1
+159   919930954    Casual      Low  4.4  ...  Corduroy     lace   solid  1
+160    10222851      Sexy      Low  4.6  ...   chiffon  ruffles  animal  1
+
+[161 rows x 14 columns]
+INFO 2022-08-21 00:54:04,115 127.0.0.1 - - [21/Aug/2022 00:54:04] "POST /mysql_database/fetch HTTP/1.1" 200 -
+INFO 2022-08-21 00:55:24,569 
+
+
+Logging is enabled
+INFO 2022-08-21 00:55:25,937 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO 2022-08-21 00:55:25,937 [33mPress CTRL+C to quit[0m
+INFO 2022-08-21 00:56:30,456 Sql_database class invoked
+INFO 2022-08-21 00:56:30,457 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:56:30,457 Database creation function from class invoked
+INFO 2022-08-21 00:56:30,580 Database created successfully  [('babu12',), ('babu1234',), ('dataset',), ('dataset1',), ('information_schema',), ('mysql',), ('performance_schema',), ('sakila',), ('sys',), ('world',)]
+INFO 2022-08-21 00:56:30,581 Table creation function from class invoked
+INFO 2022-08-21 00:56:30,925 Tables created successfully[('attribute',)]
+INFO 2022-08-21 00:56:30,926 Attribute bulk insert function from class invoked
+INFO 2022-08-21 00:56:32,941 All attribute data inserted
+INFO 2022-08-21 00:56:32,942 insert data function from class invoked
+INFO 2022-08-21 00:56:33,017 one record inserted
+INFO 2022-08-21 00:56:33,022 127.0.0.1 - - [21/Aug/2022 00:56:33] "POST /mysql_database/insert HTTP/1.1" 200 -
+INFO 2022-08-21 00:56:37,242 Sql_database class invoked
+INFO 2022-08-21 00:56:37,242 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:56:37,242 updating records function from class invoked
+INFO 2022-08-21 00:56:37,334 Records updated
+INFO 2022-08-21 00:56:37,334 127.0.0.1 - - [21/Aug/2022 00:56:37] "POST /mysql_database/update HTTP/1.1" 200 -
+INFO 2022-08-21 00:56:41,422 Sql_database class invoked
+INFO 2022-08-21 00:56:41,422 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:56:41,422 fetch data function from class invoked
+INFO 2022-08-21 00:56:41,486 Records fetched             0         1        2    3   ...        10       11      12 13
+0    1006032852      Sexy      Low  4.6  ...   chiffon  ruffles  animal  1
+1    1212192089    Casual      Low  0.0  ...      NULL  ruffles  animal  1
+2     876339541      cute      Low  4.5  ...   chiffon      bow     dot  1
+3    1068332458  bohemian      Low  0.0  ...      NULL     NULL   print  1
+4    1220707172    Casual  Average  0.0  ...      NULL     NULL   solid  1
+..          ...       ...      ...  ...  ...       ...      ...     ... ..
+156   817353671  bohemian      Low  4.6  ...   chiffon     none   solid  1
+157   722565148      Sexy      Low  4.3  ...      NULL     NULL    NULL  1
+158   532874347    Casual  Average  4.7  ...      NULL     lace   solid  1
+159   919930954    Casual      Low  4.4  ...  Corduroy     lace   solid  1
+160    10222851      Sexy      Low  4.6  ...   chiffon  ruffles  animal  1
+
+[161 rows x 14 columns]
+INFO 2022-08-21 00:56:41,487 127.0.0.1 - - [21/Aug/2022 00:56:41] "POST /mysql_database/fetch HTTP/1.1" 200 -
+INFO 2022-08-21 00:56:47,348 Sql_database class invoked
+INFO 2022-08-21 00:56:47,348 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:56:47,349 delete data function from class invoked
+INFO 2022-08-21 00:56:47,507 Records deleted
+INFO 2022-08-21 00:56:47,509 127.0.0.1 - - [21/Aug/2022 00:56:47] "POST /mysql_database/delete HTTP/1.1" 200 -
+INFO 2022-08-21 00:56:53,025 Sql_database class invoked
+INFO 2022-08-21 00:56:53,025 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:56:53,025 fetch data function from class invoked
+INFO 2022-08-21 00:56:53,033 Records fetchedEmpty DataFrame
+Columns: []
+Index: []
+INFO 2022-08-21 00:56:53,033 127.0.0.1 - - [21/Aug/2022 00:56:53] "POST /mysql_database/fetch HTTP/1.1" 200 -
+INFO 2022-08-21 00:57:26,300 Sql_database class invoked
+INFO 2022-08-21 00:57:26,301 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:57:26,301 json convertion function from class invoked
+INFO 2022-08-21 00:57:26,712 Datasets are converted to json format
+INFO 2022-08-21 00:57:26,713 Bulk insert function from class invoked
+INFO 2022-08-21 00:57:26,722 Json data loaded successfully
+INFO 2022-08-21 00:57:27,445 Attribute data inserted into MongoDB
+INFO 2022-08-21 00:57:27,479 insert record function from class invoked
+INFO 2022-08-21 00:57:28,214 record inserted into MongoDB is 
+                          _id    Dress_ID  ... PatternType Recommendation
+0    6301359e3998e540597b1d0d  1190380701  ...       print              0
+1    6301359e3998e540597b1d0d   966005983  ...       print              1
+2    6301359e3998e540597b1d0d  1219677488  ...        NULL              0
+3    6301359e3998e540597b1d0d  1113094204  ...       solid              1
+4    6301359e3998e540597b1d0d   898481530  ...      animal              0
+..                        ...         ...  ...         ...            ...
+335  6301359e3998e540597b1d0d   641665398  ...       solid              0
+336  6301359e3998e540597b1d0d   859922576  ...        NULL              0
+337  6301359e3998e540597b1d0d   990559192  ...     striped              0
+338  6301359e3998e540597b1d0d   713391965  ...       solid              1
+339  6301359e3998e540597b1d0d   655464934  ...       print              1
+
+[340 rows x 15 columns]
+INFO 2022-08-21 00:57:28,246 127.0.0.1 - - [21/Aug/2022 00:57:28] "POST /MongoDB_database/insert HTTP/1.1" 200 -
+INFO 2022-08-21 00:57:32,294 Sql_database class invoked
+INFO 2022-08-21 00:57:32,294 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:57:32,294 insert record function from class invoked
+INFO 2022-08-21 00:57:33,754 record updated into MongoDB
+INFO 2022-08-21 00:57:33,784 127.0.0.1 - - [21/Aug/2022 00:57:33] "POST /MongoDB_database/update HTTP/1.1" 200 -
+INFO 2022-08-21 00:57:37,119 Sql_database class invoked
+INFO 2022-08-21 00:57:37,119 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:57:37,119 insert record function from class invoked
+INFO 2022-08-21 00:57:37,591 record fetched into MongoDB is 
+{'_id': ObjectId('6301359f3998e540597b1d0f'), 'id': '0001', 'type': 'spring_roll', 'name': 'Cake', 'ppu': 0.55, 'batters': {'batter': [{'id': '1001', 'type': 'Regular'}, {'id': '1002', 'type': 'Chocolate'}, {'id': '1003', 'type': 'Blueberry'}, {'id': '1004', 'type': "Devil's Food"}]}, 'topping': [{'id': '5001', 'type': 'None'}, {'id': '5002', 'type': 'Glazed'}, {'id': '5005', 'type': 'Sugar'}, {'id': '5007', 'type': 'Powdered Sugar'}, {'id': '5006', 'type': 'Chocolate with Sprinkles'}, {'id': '5003', 'type': 'Chocolate'}, {'id': '5004', 'type': 'Maple'}]}
+INFO 2022-08-21 00:57:37,593 record fetched into MongoDB is 
+{'_id': ObjectId('6301359f3998e540597b1d10'), 'id': '0002', 'type': 'spring_roll', 'name': 'Raised', 'ppu': 0.55, 'batters': {'batter': [{'id': '1001', 'type': 'Regular'}]}, 'topping': [{'id': '5001', 'type': 'None'}, {'id': '5002', 'type': 'Glazed'}, {'id': '5005', 'type': 'Sugar'}, {'id': '5003', 'type': 'Chocolate'}, {'id': '5004', 'type': 'Maple'}]}
+INFO 2022-08-21 00:57:37,594 record fetched into MongoDB is 
+{'_id': ObjectId('6301359f3998e540597b1d11'), 'id': '0003', 'type': 'spring_roll', 'name': 'Old Fashioned', 'ppu': 0.55, 'batters': {'batter': [{'id': '1001', 'type': 'Regular'}, {'id': '1002', 'type': 'Chocolate'}]}, 'topping': [{'id': '5001', 'type': 'None'}, {'id': '5002', 'type': 'Glazed'}, {'id': '5003', 'type': 'Chocolate'}, {'id': '5004', 'type': 'Maple'}]}
+INFO 2022-08-21 00:57:37,630 127.0.0.1 - - [21/Aug/2022 00:57:37] "POST /MongoDB_database/fetch HTTP/1.1" 200 -
+INFO 2022-08-21 00:57:42,950 Sql_database class invoked
+INFO 2022-08-21 00:57:42,950 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:57:42,950 insert record function from class invoked
+INFO 2022-08-21 00:57:44,423 record deleted into MongoDB
+INFO 2022-08-21 00:57:44,455 127.0.0.1 - - [21/Aug/2022 00:57:44] "POST /MongoDB_database/delete HTTP/1.1" 200 -
+INFO 2022-08-21 00:57:47,101 Sql_database class invoked
+INFO 2022-08-21 00:57:47,101 The MySQL DB connection parameters initialized
+INFO 2022-08-21 00:57:47,101 insert record function from class invoked
+INFO 2022-08-21 00:57:47,478 record fetched into MongoDB is 
+{'_id': ObjectId('6301359f3998e540597b1d10'), 'id': '0002', 'type': 'spring_roll', 'name': 'Raised', 'ppu': 0.55, 'batters': {'batter': [{'id': '1001', 'type': 'Regular'}]}, 'topping': [{'id': '5001', 'type': 'None'}, {'id': '5002', 'type': 'Glazed'}, {'id': '5005', 'type': 'Sugar'}, {'id': '5003', 'type': 'Chocolate'}, {'id': '5004', 'type': 'Maple'}]}
+INFO 2022-08-21 00:57:47,479 record fetched into MongoDB is 
+{'_id': ObjectId('6301359f3998e540597b1d11'), 'id': '0003', 'type': 'spring_roll', 'name': 'Old Fashioned', 'ppu': 0.55, 'batters': {'batter': [{'id': '1001', 'type': 'Regular'}, {'id': '1002', 'type': 'Chocolate'}]}, 'topping': [{'id': '5001', 'type': 'None'}, {'id': '5002', 'type': 'Glazed'}, {'id': '5003', 'type': 'Chocolate'}, {'id': '5004', 'type': 'Maple'}]}
+INFO 2022-08-21 00:57:47,511 127.0.0.1 - - [21/Aug/2022 00:57:47] "POST /MongoDB_database/fetch HTTP/1.1" 200 -
